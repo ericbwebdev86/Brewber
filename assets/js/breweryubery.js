@@ -33,6 +33,7 @@ userFormEl.addEventListener("submit", formSubmitHandler);
 
 var displayBreweries = function(data, searchTerm) {
     console.log(data);
+    apiData = data;
     console.log(searchTerm);
     // clear old content
     breweryContainerEl.textContent = "";
@@ -41,18 +42,30 @@ var displayBreweries = function(data, searchTerm) {
     // loop over data
     for (var i = 0; i < data.length; i++) {
     // format data
-    var breweryName = data[i].name;
+    var { name, brewery_type, street, city, state} = data[i];
     
+    let output = `
+    <div class="card column has-background-info">
+        <div class="card-content">
+            <div class="content">
+                <h4>${name}</h4>
+                <h6>Brewery Type: ${brewery_type}</h6>
+                <h6>${street}</h6>
+                <h6>${city}, ${state}</h6>
+                </div>
+        </div>
+    </div>
+    `
+    document.getElementById('brewery-container').innerHTML += output;
 
     // create a container for each brewery
-    var breweryEl = document.createElement("div");
+    // var breweryEl = document.createElement("div");
 
-    var breweryName = data;
-    var breweryNameEl = document.createElement("div");
-    breweryNameEl.textContent = "Name: " + breweryName;
-    breweryEl.appendChild(breweryNameEl);
+    // var breweryName = data;
+    // var breweryNameEl = document.createElement("div");
+    // breweryNameEl.textContent = "Name: " + breweryName;
+    // breweryEl.appendChild(breweryNameEl);
 
-    breweryContainerEl.appendChild(breweryEl);
+    // breweryContainerEl.appendChild(breweryEl);
 }
-
 };
