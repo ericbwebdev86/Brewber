@@ -52,20 +52,10 @@ var displayBreweries = function(data, searchTerm) {
                 <h6>Brewery Type: ${brewery_type}</h6>
                 <h6>${street}</h6>
                 <h6>${city}, ${state}</h6>
-                </div>
+            </div>
         </div>
     </div>
     `
     document.getElementById('brewery-container').innerHTML += output;
-
-    // create a container for each brewery
-    // var breweryEl = document.createElement("div");
-
-    // var breweryName = data;
-    // var breweryNameEl = document.createElement("div");
-    // breweryNameEl.textContent = "Name: " + breweryName;
-    // breweryEl.appendChild(breweryNameEl);
-
-    // breweryContainerEl.appendChild(breweryEl);
 }
 };
