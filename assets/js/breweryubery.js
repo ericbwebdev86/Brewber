@@ -69,3 +69,9 @@ var displayBreweries = function(data, searchTerm) {
     // breweryContainerEl.appendChild(breweryEl);
 }
 };
+
+
+
+var picsApiUrl = "https://api.pexels.com/v1/search?query=beer";
+
+fetch(picsApiUrl);
