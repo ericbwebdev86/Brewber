@@ -74,4 +74,14 @@ var displayBreweries = function(data, searchTerm) {
 
 var picsApiUrl = "https://api.pexels.com/v1/search?query=beer";
 
-fetch(picsApiUrl);
+fetch(picsApiUrl).then(function(response) {
+    // request was successful
+    if (response.ok) {
+        response.json().then(function(data) {
+            console.log(data);
+        });
+    }
+    else {
+        // 
+    }
+});
