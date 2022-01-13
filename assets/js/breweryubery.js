@@ -37,35 +37,27 @@ var displayBreweries = function(data, searchTerm) {
     console.log(searchTerm);
     // clear old content
     breweryContainerEl.textContent = "";
-    citySearchTerm.textContent = searchTerm;
+    citySearchTerm.textContent = "Breweries near: " + searchTerm;
 
     // loop over data
     for (var i = 0; i < data.length; i++) {
     // format data
-    var { name, brewery_type, street, city, state} = data[i];
+    var { name, brewery_type, street, city, state, phone} = data[i];
     
     let output = `
-    <div class="card column has-background-info">
+    <div class="card column is-one-quarter has-background-warning m-2">
         <div class="card-content">
+        <p class="title is-4">${name}</p>
             <div class="content">
-                <h4>${name}</h4>
                 <h6>Brewery Type: ${brewery_type}</h6>
                 <h6>${street}</h6>
                 <h6>${city}, ${state}</h6>
-                </div>
+                <h6>Phone: ${phone}</h6>
+            </div>
         </div>
     </div>
     `
+
     document.getElementById('brewery-container').innerHTML += output;
-
-    // create a container for each brewery
-    // var breweryEl = document.createElement("div");
-
-    // var breweryName = data;
-    // var breweryNameEl = document.createElement("div");
-    // breweryNameEl.textContent = "Name: " + breweryName;
-    // breweryEl.appendChild(breweryNameEl);
-
-    // breweryContainerEl.appendChild(breweryEl);
 }
 };
