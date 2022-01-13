@@ -52,7 +52,7 @@ var displayBreweries = function(data, searchTerm) {
                 <h6>Brewery Type: ${brewery_type}</h6>
                 <h6>${street}</h6>
                 <h6>${city}, ${state}</h6>
-                <h6>${phone}</h6>
+                <h6>Phone: ${phone}</h6>
             </div>
         </div>
     </div>
