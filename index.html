@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/favicon-16x16.png" type="image/x-icon"/>
+    <link rel="icon" href="assets/images/favicon-16x16.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,20 +16,20 @@
 <body>
     <header>
         <h1>
-        <a href="/">Brewber</a>
+            <a href="/">Brewber</a>
         </h1>
     </header>
-    
+
     <!-- hero/jumbotron -->
     <section class="hero is-small is-warning has-background">
-        <img class="hero-background.is-transparent" src="./assets/images/hero-bg.jpg"> 
-            <div class=" hero-body">
-                <div class="container">
-                    <h1 class="title">BrewberEats</h1>
-                    <h2 class="subtitle">Find brews and food near you!</h2>
-                </div>
+        <img class="hero-background.is-transparent" src="./assets/images/hero-bg.jpg">
+        <div class=" hero-body">
+            <div class="container">
+                <h1 class="title">BrewberEats</h1>
+                <h2 class="subtitle">Find brews and food near you!</h2>
             </div>
-      </section>
+        </div>
+    </section>
 
     <!-- Brewery section -->
     <section class="m-5">
@@ -52,33 +52,37 @@
 
     <!-- Uber section -->
     <section class="m-5">
-        <h2>Ubers Near You</h2>
+        <h2>Restaurants Near You</h2>
+        <p>Click here to find restaurants near you!</p>
+        <button class="map-btn">I'm Hungry</button>
+        <div class="map-div" id="map"></div>
     </section>
-
     <!-- footer -->
 
     <footer class="m-5">
 
-    <footer>
-        <div>
-            <h3 class= "contributors">Contributors</h3>
-            <ul class="names">
-                <li><a href="https://github.com/ericbwebdev86" target="_blank" class=>Eric Bates</a></li>
-                <li><a href="https://github.com/Hmlessard" target="_blank" class=>Heather Lessard</a></li>
-                <li><a href="https://github.com/Chris-McLeod2" target="_blank" class=>Chris McLeod</a></li>
-                <li><a href="https://github.com/mthao14" target="_blank" class=>Mai Thao</a></li>
-                <li><a href="https://github.com/rtthiel8" target="_blank" class=>Ryan Thiel</a></li>
-            </ul>
-        </div>
+        <footer>
+            <div>
+                <h3 class="contributors">Contributors</h3>
+                <ul class="names">
+                    <li><a href="https://github.com/ericbwebdev86" target="_blank" class=>Eric Bates</a></li>
+                    <li><a href="https://github.com/Hmlessard" target="_blank" class=>Heather Lessard</a></li>
+                    <li><a href="https://github.com/Chris-McLeod2" target="_blank" class=>Chris McLeod</a></li>
+                    <li><a href="https://github.com/mthao14" target="_blank" class=>Mai Thao</a></li>
+                    <li><a href="https://github.com/rtthiel8" target="_blank" class=>Ryan Thiel</a></li>
+                </ul>
+            </div>
 
-    <h2>Drink responsibly.</h2>
-    <div>
-        <a href="">Read Our Privay Policy</a></br> <!-- do you guys want something here? --> 
-        &copy; 2021 Brewber, Inc.
-    </div>
-</footer>
+            <h2>Drink responsibly.</h2>
+            <div>
+                <a href="">Read Our Privay Policy</a></br> <!-- do you guys want something here? -->
+                &copy; 2021 Brewber, Inc.
+            </div>
+        </footer>
 
-    <script src="./assets/js/breweryubery.js"></script>
+        <script src="./assets/js/breweryubery.js"></script>
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdsFaukagpPksoM_ig6kCkREjNfa8EXS8&libraries=places&callback=initMap"></script>
 </body>
 
 </html>
