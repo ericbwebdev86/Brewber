@@ -19,3 +19,8 @@
     height: 300px;
     width:auto;    
 }
+
+#searchHistory {
+  color: #fff;
+  background-color: #3488ce;
+}
