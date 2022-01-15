@@ -34,15 +34,23 @@
       <!-- Trigger/Open The Modal -->
 <button id="myBtn">Age Confirmation</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+<h2>What's your age?</h2>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>By entering this site, you're confirming you're at least 21 years old</p>
-  </div>
+<button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
 
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Delete Account</h1>
+      <p>Come back in a few</p>
+    
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
+      </div>
+    </div>
+  </form>
 </div>
 
     <!-- Brewery section -->
