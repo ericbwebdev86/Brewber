@@ -116,3 +116,12 @@ button {
        width: 100%;
     }
   }
+#searchHistory {
+  color: #fff;
+  background-color: #3488ce;
+}
+.map-div {
+    height:500px;
+    width: 500px;
+    display:none;
+}
