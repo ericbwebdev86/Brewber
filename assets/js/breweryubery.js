@@ -8,7 +8,14 @@ var searchHistoryEl =document.querySelector("#searchHistory")
 var modal = document.getElementById('id01');
 modal.style.display= "block"
 
-//If the user clicks Not 21, don't load page
+//If the user clicks Not 21, take them to responsibility.org+
+// let button = document.querySelector('.deletebtn');
+// id02.addEventListener("click", function() {
+//     location.href="https://www.responsibility.org/";
+// });
+// if (!event.target.matches('.deletebtn')) {
+//     location.href="https://www.responsibility.org";
+// }
 
 // // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function(event) {
@@ -17,9 +24,6 @@ modal.style.display= "block"
 //   }
 // }
 //If 
-
-var formSubmitHandler = function(event) {
-
 var cities = []
 
 var formSubmitHandler = function (event) {
@@ -75,15 +79,15 @@ var displayBreweries = function (data, searchTerm) {
     populateDropdown()
     // loop over data
     for (var i = 0; i < data.length; i++) {
-    // format data
-    var { name, brewery_type, street, city, state, phone} = data[i];
-    
+        // format data
+        var { name, brewery_type, street, city, state, phone } = data[i];
+
     // Phone number formating, use 'j' because 'i' was already used above
     var phoneArray = phone.split('');
 
     var formatedNumber = [];
     for(var j = 0; j < phoneArray.length; j++){
-        // if it's the 2nd or 5th position in an array, push '-'
+        // if it's the 2nd or 5th position in an array, push '-' afterwards
       if (j == 2 || j === 5 ){
           formatedNumber.push(phoneArray[j])
         formatedNumber.push('-')
@@ -93,17 +97,7 @@ var displayBreweries = function (data, searchTerm) {
       }
     }
 
-    phone = formatedNumber.join('');
-    
-
-
-  
-
-    
-    let output = `
-        // format data
-        var { name, brewery_type, street, city, state, phone } = data[i];
-
+    phone = formatedNumber.join('');    
         let output = `
     <div class="card column is-one-quarter has-background-warning m-2">
         <div class="card-content">
@@ -117,7 +111,6 @@ var displayBreweries = function (data, searchTerm) {
         </div>
     </div>
     `
-    
 
         document.getElementById('brewery-container').innerHTML += output;
     }
@@ -157,7 +150,6 @@ function getCoords() {
         locationServicesError(false, infoWindow, map.getCenter());
     }
     infowindow = new google.maps.InfoWindow();
-}
 };
 
 
@@ -250,4 +242,3 @@ mapBtn.addEventListener("click", function () {
 
 })
 //google api end
-
