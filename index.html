@@ -32,22 +32,20 @@
       </section>
 
       <!-- Trigger/Open The Modal -->
-<button id="myBtn">Age Confirmation</button>
 
-<h2>What's your age?</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+<button onclick="document.getElementById('id01').style.display='block'">Age Confirmation</button>
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Delete Account</h1>
-      <p>Come back in a few</p>
+      <h1>Please confirm your age</h1>
+      <p>Come back in a few years</p>
     
       <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">I'm at least 21 years old</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">I'm under 21 years old</button>
       </div>
     </div>
   </form>

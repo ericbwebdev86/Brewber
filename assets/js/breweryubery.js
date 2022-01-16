@@ -6,6 +6,9 @@ var cityInputEl = document.querySelector("#city");
 // Get the modal
 var modal = document.getElementById('id01');
 modal.style.display= "block"
+
+//If the user clicks Not 21, don't load page
+
 // // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function(event) {
 //   if (event.target == modal) {
@@ -55,14 +58,16 @@ var displayBreweries = function(data, searchTerm) {
     // format data
     var { name, brewery_type, street, city, state, phone} = data[i];
     
+    // Phone number formating, use 'j' because 'i' was already used above
     var phoneArray = phone.split('');
 
     var formatedNumber = [];
     for(var j = 0; j < phoneArray.length; j++){
-
+        // if it's the 2nd or 5th position in an array, push '-'
       if (j == 2 || j === 5 ){
           formatedNumber.push(phoneArray[j])
         formatedNumber.push('-')
+        //otherwise push regular numbers in array
       } else {
         formatedNumber.push(phoneArray[j])
       }
