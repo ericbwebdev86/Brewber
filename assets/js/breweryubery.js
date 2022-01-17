@@ -8,22 +8,12 @@ var searchHistoryEl =document.querySelector("#searchHistory")
 var modal = document.getElementById('id01');
 modal.style.display= "block"
 
-//If the user clicks Not 21, take them to responsibility.org+
-// let button = document.querySelector('.deletebtn');
-// id02.addEventListener("click", function() {
-//     location.href="https://www.responsibility.org/";
-// });
-// if (!event.target.matches('.deletebtn')) {
-//     location.href="https://www.responsibility.org";
-// }
+//If the user clicks Not 21, take them to responsibility.org
+ let button = document.querySelector('.deletebtn');
+ button.addEventListener("click", () => {
+     location.href="https://www.responsibility.org/";
+ })
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-//If 
 var cities = []
 
 var formSubmitHandler = function (event) {
