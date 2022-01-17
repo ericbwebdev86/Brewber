@@ -70,18 +70,17 @@ var displayBreweries = function(data, searchTerm) {
 }
 };
 
+import { createClient } from 'pexels';
 
+const client = createClient('563492ad6f91700001000001ea5871cfabd5487e88a6e19553ced5e3');
 
 var picsApiUrl = "https://api.pexels.com/v1/search?query=beer";
+ 
+fetch(picsApiUrl);
 
-fetch(picsApiUrl).then(function(response) {
-    // request was successful
-    if (response.ok) {
-        response.json().then(function(data) {
-            console.log(data);
-        });
-    }
-    else {
-        // 
-    }
-});
+
+
+
+
+
+

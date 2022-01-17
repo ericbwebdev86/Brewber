@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/images/favicon-16x16.png" type="image/x-icon"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Brewber</title>
 </head>
@@ -17,6 +18,22 @@
         <h1>
         <a href="/">Brewber</a>
         </h1>
+        <br>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#breweries">Breweries Near You</a>
+                </li>
+                <li>
+                    <a href="#uber">Ubers Near You</a>
+                </li>
+                <li>
+                    <a href="#another-anchor">Local Favorites</a>
+                </li>
+               
+            </ul>
+        </nav>
     </header>
     
     <!-- hero/jumbotron -->
@@ -26,6 +43,9 @@
     <!-- Brewery section -->
     <section>
         <h2>Breweries Near You</h2>
+    </section>
+    <br>
+    <section>
         <div>
             <h3>Search for a City:</h3>
             <form id="brew-form">
@@ -34,22 +54,39 @@
                 <button type="submit" class="btn">Search</button>
             </form>
         </div>
+    </section>
 
+    <section>
         <div>
             <h3>Breweries near: <span id="city-search-term"></span></h3>
             <div id="brewery-container" class="columns"> </div>
         </div>
 
     </section>
+    <br>
 
-    <!-- Uber section -->
-    <section>
-        <h2>Ubers Near You</h2>
-    </section>
+
+
+    <div id="carouselExamplesSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000">
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/images/cheerspic.jpg" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/brewerypic.jpg" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/restaurantpic.jpg" alt="Slide 3">
+          </div>
+        </div>
+        </div>
+
+     
 
     <!-- footer -->
-    <footer>
-        <div>
+    <footer class="footer-pics" id="slideshow"> 
+        <div class="content">
             <h3 class= "contributors">Contributors</h3>
             <ul class="names">
                 <li><a href="https://github.com/ericbwebdev86" target="_blank" class=>Eric Bates</a></li>
@@ -61,7 +98,7 @@
         </div>
     <h2>Drink responsibly.</h2>
     <div>
-        <a href="">Read Our Privay Policy</a></br> <!-- do you guys want something here? --> 
+        <a href="">Read Our Privacy Policy</a></br> <!-- do you guys want something here? --> 
         &copy; 2021 Brewber, Inc.
     </div>
 </footer>
