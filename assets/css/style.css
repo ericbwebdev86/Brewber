@@ -1,3 +1,19 @@
+body {
+    background-color: black;
+}
+
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
 .hero.has-background {
     position: relative;
     overflow: hidden;
@@ -116,6 +132,15 @@ button {
        width: 100%;
     }
   }
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
+    
+}
+
 #searchHistory {
   color: #fff;
   background-color: #3488ce;
@@ -125,6 +150,11 @@ button {
     width: 500px;
     display:none;
 }
+
+.carousel-inner {
+  height: 100px;
+}
+
 /* Mobile up to 768px*/
 @include mobile {
 
@@ -146,4 +176,9 @@ button {
 }
 
 /*FullHD 1408px and above*/
-@include fullhd
+@include fullhd {
+
+}
+
+
+

@@ -232,3 +232,5 @@ mapBtn.addEventListener("click", function () {
 
 })
 //google api end
+
+$('.carousel').carousel()
