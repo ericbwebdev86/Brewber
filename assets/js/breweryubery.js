@@ -116,7 +116,7 @@ function getCoords() {
     }
     infowindow = new google.maps.InfoWindow();
 }
-};
+
 
 
 
@@ -209,3 +209,4 @@ mapBtn.addEventListener("click", function () {
 })
 //google api end
 
+$('.carousel').carousel()

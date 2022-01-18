@@ -54,3 +54,8 @@ header nav ul {
     width: 500px;
     display:none;
 }
+
+.carousel-inner {
+    height: 100px;
+}
+
