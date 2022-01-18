@@ -28,10 +28,10 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 20%;
     opacity: 0.9;
   }
-  
+
   button:hover {
     opacity:1;
   }
@@ -44,7 +44,7 @@ button {
   
   /* Add a color to the cancel button */
   .cancelbtn {
-    background-color: #ccc;
+    background-color: rgb(32, 177, 32);
     color: black;
   }
   
@@ -125,3 +125,25 @@ button {
     width: 500px;
     display:none;
 }
+/* Mobile up to 768px*/
+@include mobile {
+
+}
+
+/*Tablet between 769px and 1023*/
+@include tablet {
+
+}
+
+/*Desktop between 1024px and 1215px*/
+@include desktop {
+
+}
+
+/*Widescreen between 1216px and 1407pc*/
+@include widescreen {
+
+}
+
+/*FullHD 1408px and above*/
+@include fullhd
