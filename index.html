@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Brewber</title>
 </head>
@@ -18,6 +19,20 @@
         <h1>
             <a href="/">Brewber</a>
         </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#breweries">Breweries Near You</a>
+                </li>
+                <li>
+                    <a href="#uber">Ubers Near You</a>
+                </li>
+                <li>
+                    <a href="#another-anchor">Local Favorites</a>
+                </li>
+               
+            </ul>
+        </nav>
     </header>
 
     <!-- hero/jumbotron -->
@@ -63,6 +78,27 @@
         <button class="map-btn">I'm Hungry</button>
         <div class="map-div" id="map"></div>
     </section>
+
+    <!-- Pictures -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-50" src="./assets/images/Slide-1-MH.jpg" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./assets/images/Slide-2.jpg" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./assets/images/Slide-3.jpg" alt="Slide 3">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./assets/images/Slide-4.jpg" alt="Slide 4">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./assets/images/Slide-5.jpg" alt="Slide 5">
+          </div>
+        </div>
+    </div>
     <!-- footer -->
 
     <footer class="m-5">
@@ -81,7 +117,7 @@
 
             <h2>Drink responsibly.</h2>
             <div>
-                <a href="">Read Our Privay Policy</a></br> <!-- do you guys want something here? -->
+                <a href="">Read Our Privacy Policy</a></br> <!-- do you guys want something here? -->
                 &copy; 2021 Brewber, Inc.
             </div>
         </footer>
@@ -89,6 +125,10 @@
         <script src="./assets/js/breweryubery.js"></script>
         <script async
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdsFaukagpPksoM_ig6kCkREjNfa8EXS8&libraries=places&callback=initMap"></script>
-</body>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        </body>
 
 </html>
