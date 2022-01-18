@@ -15,33 +15,29 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="/">Brewber</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#breweries">Breweries Near You</a>
-                </li>
-                <li>
-                    <a href="#uber">Ubers Near You</a>
-                </li>
-                <li>
-                    <a href="#another-anchor">Local Favorites</a>
-                </li>
-               
-            </ul>
-        </nav>
-    </header>
 
     <!-- hero/jumbotron -->
     <section class="hero is-small is-warning has-background">
         <img class="hero-background.is-transparent" src="./assets/images/hero-bg.jpg">
         <div class=" hero-body">
             <div class="container">
-                <h1 class="title">BrewberEats</h1>
+                <header>
+                <h1 class="is-size-1 has-text-weight-bold">BrewberEats</h1>
                 <h2 class="subtitle">Find brews and food near you!</h2>
+                <nav class="has-text-weight-semibold">
+                    <ul>
+                        <li>
+                            <a href="#breweries">Breweries Near You</a>
+                        </li>
+                        <li>
+                            <a href="#uber">Restaurants Near You</a>
+                        </li>
+                        <li>
+                            <a href="#another-anchor">Local Favorites</a>
+                        </li>
+                    </ul>
+                </nav>
+                </header>
             </div>
         </div>
     </section>
@@ -72,9 +68,9 @@
     </section>
 
     <!-- Uber section -->
-    <section class="m-5">
+    <section class="m-5 is-size-2">
         <h2>Restaurants Near You</h2>
-        <p>Click here to find restaurants near you!</p>
+        <p class="is-size-3">Click here to find restaurants near you!</p>
         <button class="map-btn">I'm Hungry</button>
         <div class="map-div" id="map"></div>
     </section>
