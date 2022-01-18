@@ -1,3 +1,19 @@
+body {
+    background-color: black;
+}
+
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
 .hero.has-background {
     position: relative;
     overflow: hidden;
@@ -20,6 +36,15 @@
     width:auto;    
 }
 
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
+    
+}
+
 #searchHistory {
   color: #fff;
   background-color: #3488ce;
@@ -28,4 +53,8 @@
     height:500px;
     width: 500px;
     display:none;
+}
+
+.container {
+    background-color: black;
 }
