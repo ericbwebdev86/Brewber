@@ -115,7 +115,6 @@ function getCoords() {
         locationServicesError(false, infoWindow, map.getCenter());
     }
     infowindow = new google.maps.InfoWindow();
-}
 };
 
 
