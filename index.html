@@ -19,12 +19,37 @@
     <!-- hero/jumbotron -->
     <header class="hero is-small is-warning has-background">
         <img class="hero-background.is-transparent" src="./assets/images/hero-bg.jpg">
-                <h1 class="title">BrewberEats</h1>
-                <h2 class="subtitle">Find brews and food near you!</h2>
-           
+        <h1 class=" title is-size-1 has-text-weight-bold">BrewberEats</h1>
+        <h2 class="subtitle">Find brews and food near you!</h2>  
     </header>
 
-      <!-- Trigger/Open The Modal -->
+        <div class=" hero-body">
+            <div class="container">
+                <!--<header>
+                <h1 class="is-size-1 has-text-weight-bold">BrewberEats</h1>
+                <h2 class="subtitle">Find brews and food near you!</h2> -->
+                <nav class="has-text-weight-semibold">
+                    <ul>
+                        <li>
+                            <a href="#breweries">Breweries Near You</a>
+                        </li>
+                        <li>
+                            <a href="#restaurant">Restaurants Near You</a>
+                        </li>
+                        <li>
+                            <a href="#another-anchor">Local Favorites</a>
+                        </li>
+                        <li>
+                            <a href="#us">Contributors</a>
+                        </li>
+                    </ul>
+                </nav>
+                </header>
+            </div>
+        </div>
+    </section>
+
+          <!-- Trigger/Open The Modal -->
 
 
 <button onclick="document.getElementById('id01').style.display='block'">Age Confirmation</button>
@@ -42,31 +67,9 @@
     </div>
   </form>
 </div>
-        <div class=" hero-body">
-            <div class="container">
-                <header>
-                <h1 class="is-size-1 has-text-weight-bold">BrewberEats</h1>
-                <h2 class="subtitle">Find brews and food near you!</h2>
-                <nav class="has-text-weight-semibold">
-                    <ul>
-                        <li>
-                            <a href="#breweries">Breweries Near You</a>
-                        </li>
-                        <li>
-                            <a href="#uber">Restaurants Near You</a>
-                        </li>
-                        <li>
-                            <a href="#another-anchor">Local Favorites</a>
-                        </li>
-                    </ul>
-                </nav>
-                </header>
-            </div>
-        </div>
-    </section>
 
     <!-- Brewery section -->
-    <section class="m-5">
+    <section id="breweries" class="m-5">
         <h2 class="is-size-2">Breweries Near You</h2>
         <div m-3>
             <h3 class="is-size-3">Search for a City:</h3>
@@ -90,8 +93,8 @@
 
     </section>
 
-    <!-- Uber section -->
-    <section class="m-5 is-size-2">
+    <!-- Restaurant section -->
+    <section id= "restaurant" class="m-5 is-size-2">
         <h2>Restaurants Near You</h2>
         <p class="is-size-3">Click here to find restaurants near you!</p>
         <button class="map-btn">I'm Hungry</button>
@@ -99,7 +102,7 @@
     </section>
 
     <!-- Pictures -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div id="carouselExampleSlidesOnly" class="carousel slide center" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-50" src="./assets/images/Slide-1-MH.jpg" alt="Slide 1">
@@ -124,7 +127,7 @@
 
         <footer>
             <div>
-                <h3 class="contributors">Contributors</h3>
+                <h3 id="us" class="contributors">Contributors</h3>
                 <ul class="names">
                     <li><a href="https://github.com/ericbwebdev86" target="_blank" class=>Eric Bates</a></li>
                     <li><a href="https://github.com/Hmlessard" target="_blank" class=>Heather Lessard</a></li>

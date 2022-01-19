@@ -20,6 +20,7 @@ p {
 }
   
 .hero-background {
+  background-image: url('/assets/images/hero-bg.jpg');
     position: absolute;
     object-fit: cover;
     object-position: center center;
@@ -36,6 +37,48 @@ p {
     width:auto;    
 }
 
+.title, .subtitle {
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+/*ul li {
+  display: inline;
+  ;
+}*/
 /* Set a style for all buttons */
 button {
     background-color: #04AA6D;
@@ -67,6 +110,7 @@ button {
   /* Add a color to the delete button */
   .deletebtn {
     background-color: #f44336;
+    color: black;
   }
   
   /* Add padding and center-align text to the container */
@@ -132,14 +176,7 @@ button {
        width: 100%;
     }
   }
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: right;
-    list-style: none;
-    
-}
+
 
 #searchHistory {
   color: #fff;
@@ -152,7 +189,8 @@ header nav ul {
 }
 
 .carousel-inner {
-  height: 100px;
+  width: 50%;
+  height: auto;
 }
 
 /* Mobile up to 768px*/
