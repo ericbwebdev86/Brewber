@@ -13,6 +13,10 @@ p {
     color: white !important;
 }
 
+.title.is-size-1.has-text-weight-bold.has-text-dark {
+  font-family: 'Raleway', sans-serif;
+}
+
 .hero.has-background {
     position: relative;
     overflow: hidden;
@@ -47,7 +51,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   list-style: none;
 }
 
@@ -58,7 +62,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-}
+} 
 
 li {
   float: left;
@@ -76,10 +80,7 @@ li a:hover {
   background-color: #111;
 }
 
-footer {
-  background: $warning;
-  padding: 0px 0px 24px;
-}
+
 
 /*ul li {
   display: inline;
@@ -87,7 +88,7 @@ footer {
 }*/
 /* Set a style for all buttons */
 button {
-    background-color: #ecd467;
+    background-color: #f0df93;
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
@@ -102,7 +103,7 @@ button {
   }
 
   .button.is-info.m-3{
-    background-color: #ecd467;
+    background-color: #f0df93;
     color: black;
   }
 
@@ -192,7 +193,7 @@ button {
 
 #searchHistory {
   color: black;
-  background-color: #ecd467;
+  background-color: #f0df93;
 }
 .map-div {
     height:500px;
@@ -201,8 +202,9 @@ button {
 }
 
 .carousel-inner {
-  width: 50%;
+  width: auto;
   height: 50%;
+  
 }
 
 /* Mobile up to 768px*/
