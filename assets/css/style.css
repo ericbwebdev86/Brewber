@@ -3,14 +3,14 @@ body {
 }
 
 h2 {
-    color: white;
+    color: white !important;
 }
 h3 {
-    color: white;
+    color: white !important;
 }
 
 p {
-    color: white;
+    color: white !important;
 }
 
 .hero.has-background {
