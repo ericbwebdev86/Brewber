@@ -76,6 +76,10 @@ li a:hover {
   background-color: #111;
 }
 
+footer {
+  background: $warning;
+  padding: 0px 0px 24px;
+}
 
 /*ul li {
   display: inline;
@@ -83,8 +87,8 @@ li a:hover {
 }*/
 /* Set a style for all buttons */
 button {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #faf289;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -181,8 +185,8 @@ button {
 
 
 #searchHistory {
-  color: #fff;
-  background-color: #3488ce;
+  color: black;
+  background-color: #faf289;
 }
 .map-div {
     height:500px;
@@ -192,7 +196,7 @@ button {
 
 .carousel-inner {
   width: 50%;
-  height: auto;
+  height: 50%;
 }
 
 /* Mobile up to 768px*/
