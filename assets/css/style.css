@@ -87,7 +87,7 @@ footer {
 }*/
 /* Set a style for all buttons */
 button {
-    background-color: #faf289;
+    background-color: #ecd467;
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
@@ -100,6 +100,12 @@ button {
   button:hover {
     opacity:1;
   }
+
+  .button.is-info.m-3{
+    background-color: #ecd467;
+    color: black;
+  }
+
   
   /* Float cancel and delete buttons and add an equal width */
   .cancelbtn, .deletebtn {
@@ -186,7 +192,7 @@ button {
 
 #searchHistory {
   color: black;
-  background-color: #faf289;
+  background-color: #ecd467;
 }
 .map-div {
     height:500px;
