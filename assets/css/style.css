@@ -109,7 +109,14 @@ button {
     color: black;
   }
 
-  
+  .field {
+    margin: 50px 50px;
+    align-items: center;
+    text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
   /* Float cancel and delete buttons and add an equal width */
   .cancelbtn, .deletebtn {
     float: left;
