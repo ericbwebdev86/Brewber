@@ -1,21 +1,18 @@
 body {
-    background-color: black !important;
+    background-color: black;
 }
 
 h2 {
-    color: white !important;
+    color: white;
 }
 h3 {
-    color: white !important;
+    color: white;
 }
 
 p {
-    color: white !important;
+    color: white;
 }
 
-* {
-  font-family: 'Raleway', sans-serif;
-}
 
 .hero.has-background {
     position: relative;
@@ -33,9 +30,6 @@ p {
 
 .hero-background.is-transparent {
     opacity: 0.3; 
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
 }
 
 .hero img {
@@ -51,7 +45,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   list-style: none;
 }
 
@@ -62,12 +56,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-} 
+}
 
 li {
-  display: inline-block;
-  text-align: justify;
-  margin: 0 50px;
+  float: left;
 }
 
 li a {
@@ -79,9 +71,8 @@ li a {
 }
 
 li a:hover {
-  color: #111;
+  background-color: #111;
 }
-
 
 
 /*ul li {
@@ -90,8 +81,8 @@ li a:hover {
 }*/
 /* Set a style for all buttons */
 button {
-    background-color: #f0df93;
-    color: black;
+    background-color: #04AA6D;
+    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -103,20 +94,7 @@ button {
   button:hover {
     opacity:1;
   }
-
-  .button.is-info.m-3{
-    background-color: #f0df93;
-    color: black;
-  }
-
-  .field {
-    margin: 50px 50px;
-    align-items: center;
-    text-align: center;
-    padding-right: 20%;
-    padding-left: 20%;
-  }
-
+  
   /* Float cancel and delete buttons and add an equal width */
   .cancelbtn, .deletebtn {
     float: left;
@@ -151,7 +129,7 @@ button {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: black;
+    background-color: #474e5d;
     padding-top: 50px;
   }
   
@@ -201,8 +179,8 @@ button {
 
 
 #searchHistory {
-  color: black;
-  background-color: #f0df93;
+  color: #fff;
+  background-color: #3488ce;
 }
 .map-div {
     height:500px;
@@ -211,8 +189,8 @@ button {
 }
 
 .carousel-inner {
-  width: auto;
-  height: 700px;
+  width: 50%;
+  height: auto;
 }
 
 /* Mobile up to 768px*/
