@@ -177,6 +177,9 @@ button {
     }
   }
 
+  #breweries {
+    position: relative;
+  }
 
 #searchHistory {
   color: #fff;
@@ -188,9 +191,16 @@ button {
     display:none;
 }
 
-.carousel-inner {
+.carousel-inner .center{
   width: 50%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+
 }
 
 /* Mobile up to 768px*/
