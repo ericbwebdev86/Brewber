@@ -41,9 +41,6 @@
                             <a href="#restaurant">Restaurants Near You</a>
                         </li>
                         <li>
-                            <a href="#another-anchor">Local Favorites</a>
-                        </li>
-                        <li>
                             <a href="#us">Contributors</a>
                         </li>
                     </ul>
@@ -73,8 +70,10 @@
 </div>
 
     <!-- Brewery section -->
+    <div class="columns">
+    <div class="column">
     <section id="breweries" class="m-5">
-        <h2 class="is-size-2">Breweries Near You</h2>
+        <h2 class="is-size-2 has-text-weight-semibold">Breweries Near You</h2>
         <div m-3>
             <p class="is-size-3">Search for a City:</h3>
             <form id="brew-form">
@@ -88,7 +87,6 @@
                     </select>
                   </div>
             </form>
-            
         </div>
       
             <h2 class="m-3 is-size-2"><span id="city-search-term"></span></h2>
@@ -96,14 +94,18 @@
         </div>
 
     </section>
+    
 
     <!-- Restaurant section -->
+    <div class="column">
     <section id= "restaurant" class="m-5">
-        <h2 class="is-size-2">Restaurants Near You</h2>
+        <h2 class="is-size-2 has-text-weight-semibold">Restaurants Near You</h2>
         <p class="is-size-3">Click here to find restaurants near you!</p>
-        <button class="map-btn has-text-dark">I'm Hungry</button>
+        <button class="map-btn has-text-dark button is-warning">I'm Hungry</button>
         <div class="map-div" id="map"></div>
     </section>
+    </div>
+    </div>
 
     <!-- Pictures -->
     <div id="carouselExampleSlidesOnly" class="carousel slide center" data-ride="carousel" data-interval="5000">
@@ -125,11 +127,9 @@
           </div>
         </div>
     </div>
-    <!-- footer -->
+    
 
-    <footer class="m-5">
-
-        <footer>
+   
             <div>
                 <h3 id="us" class="contributors is-size-2">Contributors</h3>
                 <ul class="names">
@@ -141,8 +141,10 @@
                 </ul>
             </div>
 
+        <!-- footer -->
+        <footer class="m-5">
             <h2 class="is-size-3">Drink responsibly.</h2>
-            <div class="has-text-white">
+            <div class="content has-text-white">
                 &copy; 2022 BrewberEats, Inc.
             </div>
         </footer>
@@ -155,4 +157,5 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         </body>
+
 </html>

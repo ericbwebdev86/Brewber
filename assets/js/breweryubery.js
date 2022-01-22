@@ -91,7 +91,7 @@ var displayBreweries = function (data, searchTerm) {
         let output = `
     <div class="card column is-one-quarter has-background-warning m-2">
         <div class="card-content">
-        <p class="title is-4">${name}</p>
+        <p class="title is-5">${name}</p>
             <div class="content">
                 <h6>Brewery Type: ${brewery_type}</h6>
                 <h6>${street}</h6>
