@@ -56,7 +56,7 @@ var displayBreweries = function (data, searchTerm) {
     console.log(searchTerm)
     // clear old content
     breweryContainerEl.textContent = "";
-    citySearchTerm.textContent = "Breweries near: " + searchTerm;
+    citySearchTerm.textContent = "Breweries near: " + searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1);
     if (cities.indexOf(searchTerm)=== -1) {
         cities.push(searchTerm)
     }
