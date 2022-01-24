@@ -4,6 +4,15 @@ var userFormEl = document.querySelector("#brew-form");
 var cityInputEl = document.querySelector("#city");
 var searchHistoryEl =document.querySelector("#searchHistory")
 
+// Get the modal
+var modal = document.getElementById('id01');
+modal.style.display= "block"
+
+//If the user clicks Not 21, take them to responsibility.org
+ let button = document.querySelector('.deletebtn');
+ button.addEventListener("click", () => {
+     location.href="https://www.responsibility.org/";
+ })
 
 var cities = []
 
@@ -63,6 +72,22 @@ var displayBreweries = function (data, searchTerm) {
         // format data
         var { name, brewery_type, street, city, state, phone } = data[i];
 
+    // Phone number formating, use 'j' because 'i' was already used above
+    var phoneArray = phone.split('');
+
+    var formatedNumber = [];
+    for(var j = 0; j < phoneArray.length; j++){
+        // if it's the 2nd or 5th position in an array, push '-' afterwards
+      if (j == 2 || j === 5 ){
+          formatedNumber.push(phoneArray[j])
+        formatedNumber.push('-')
+        //otherwise push regular numbers in array
+      } else {
+        formatedNumber.push(phoneArray[j])
+      }
+    }
+
+    phone = formatedNumber.join('');    
         let output = `
     <div class="card column is-one-quarter has-background-warning m-2">
         <div class="card-content">
@@ -208,3 +233,4 @@ mapBtn.addEventListener("click", function () {
 })
 //google api end
 
+$('.carousel').carousel()
