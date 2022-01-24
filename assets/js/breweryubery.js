@@ -56,7 +56,7 @@ var displayBreweries = function (data, searchTerm) {
     console.log(searchTerm)
     // clear old content
     breweryContainerEl.textContent = "";
-    citySearchTerm.textContent = "Breweries near: " + searchTerm;
+    citySearchTerm.textContent = "Breweries near: " + searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1);
     if (cities.indexOf(searchTerm)=== -1) {
         cities.push(searchTerm)
     }
@@ -89,7 +89,7 @@ var displayBreweries = function (data, searchTerm) {
 
     phone = formatedNumber.join('');    
         let output = `
-    <div class="card column is-one-quarter has-background-warning m-2">
+    <div class="card column is-one-quarter is-three-quarters-mobile is-two-thirds-desktop has-background-warning m-2">
         <div class="card-content">
         <p class="title is-4">${name}</p>
             <div class="content">
