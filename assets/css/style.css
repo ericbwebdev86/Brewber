@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     background-color: black;
 }
@@ -183,17 +183,11 @@ button {
   color: #fff;
   background-color: #3488ce;
 }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 05ab5c33ab046959ec7f8e8fe4a067343f711d29
 .map-div {
     height:500px;
     width: 500px;
     display:none;
 }
-<<<<<<< HEAD
-=======
 
 .carousel-inner {
   width: 50%;
@@ -225,10 +219,6 @@ button {
 
 }
 
-
-
->>>>>>> 05ab5c33ab046959ec7f8e8fe4a067343f711d29
-=======
 html {background-color: black}
 body {
   background-color: black !important;
@@ -471,4 +461,4 @@ height: 700px;
 @include fullhd {
 
 }
->>>>>>> main
+

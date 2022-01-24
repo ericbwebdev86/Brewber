@@ -89,7 +89,7 @@ var displayBreweries = function (data, searchTerm) {
 
     phone = formatedNumber.join('');    
         let output = `
-    <div class="card column is-one-quarter has-background-warning m-2">
+    <div class="card column is-half has-background-warning mt-2">
         <div class="card-content">
         <p class="title is-4">${name}</p>
             <div class="content">
