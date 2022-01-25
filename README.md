@@ -1,4 +1,5 @@
 # BrewberEats
+
 ## Table of Contents
 --------------------
 
@@ -33,9 +34,10 @@ As a USER, I want to be able to enter a city and pull up a list of breweries in 
 
 **View website screenshots here:**
 
-![screenshot-1]"screenshot 1")
-![screenshot-2]( "screenshot 2")
-![screenshot-3]("screenshot 3")
+![Brewber-modal](./assets/images/modal-location-alert.png "Modal and location-allow alert")
+![Brewber-Main](./assets/images/Brewber-main.png "Brewber Main Page")
+![Contact-page](./assets/images/Brewber-contact-page.png "Contact Page")
+
 
 ## Technologies Used
 --------------------

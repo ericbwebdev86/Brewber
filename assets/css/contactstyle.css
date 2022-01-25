@@ -1,8 +1,10 @@
 .body {
     background-image: url("../images/beerwallpaper.jpg");
+    background-size:cover;
     text-align: center;
     height: 100%;
     width: 100%;
+    /*object-fit: fill;*/
 }
 .hero-body {
     margin-top: 80px;
@@ -11,7 +13,7 @@
     margin-top: 150px;
 }
 .names p a{
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-decoration: none;
     color: rgb(0, 0, 0);
     text-shadow: -1px 1px 0 #fff,
