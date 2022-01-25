@@ -53,13 +53,14 @@
           <!-- Trigger/Open The Modal -->
 
 
-<button onclick="document.getElementById('id01').style.display='block'">Age Confirmation</button>
+<button class= "button button is-warning m-5" onclick="document.getElementById('id01').style.display='block'">Age Confirmation</button>
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Please confirm your age</h1>
+      <h1>BrewberEats</h1>
+      <p class="modal-p">Please confirm your age in order to discover brews and food near you</p>
     
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">I'm at least 21 years old</button>
@@ -101,8 +102,8 @@
     <section id= "restaurant" class="m-5">
         <h2 class="is-size-2 has-text-weight-semibold">Restaurants Near You</h2>
         <p class="is-size-3">Click here to find restaurants near you!</p>
-        <button class="map-btn has-text-dark button is-warning">I'm Hungry</button>
-        <div class="map-div" id="map"></div>
+        <button class="button map-btn has-text-dark button is-warning">I'm Hungry</button>
+        <div class="map-div m-5 column is-three-quarters-mobile" id="map"></div>
     </section>
     </div>
     </div>
@@ -157,7 +158,7 @@
 
 
    
-            <div class="contributers">
+            <div class="contributers m-5">
                 <h3 id="us" class="contributors is-size-2">Contributors</h3>
                 <ul class="names">
                     <li><a href="https://github.com/ericbwebdev86" target="_blank" class=>Eric Bates</a></li>
