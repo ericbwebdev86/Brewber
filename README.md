@@ -1,23 +1,19 @@
-# BrewberEats
+# BrewberEats ![Github license](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Table of Contents
 --------------------
 
-* Introduction
-* User Story
-* Live Link & Screenshots
-* Technologies Used
-* Contact Info
+[Introduction](#Introduction) <br>
+[Live Link & Screenshots](#Live-Link-&-Screenshots) <br>
+[Technologies Used](#Technologies-Used) <br>
+[Contact Info](#Contact-Info) <br>
+[Maintainers](#Maintainers) <br>
 
 ## Introduction
 ---------------
 
 BrewberEats is great for anyone who is looking to search for, and try new breweries by location.  If they get hungry, they can also view where restaurants are in their local area.
 
-## User Story
--------------
-
-As a USER, I want to be able to enter a city and pull up a list of breweries in the area. WHEN list of breweries displays, it will be on individual cards on the screen, showing the brewery's name, brewery type, address and phone number, if available. WHEN allowing the website to use my location, I can then push a button THEN pins of restaurants near me will display on a map.
 
 ## User Instructions
 --------------------
@@ -62,3 +58,7 @@ As a USER, I want to be able to enter a city and pull up a list of breweries in 
 * [Chris McLeod](https://github.com/Chris-McLeod2)
 * [Mai Thao](https://github.com/mthao14)
 * [Ryan Thiel](https://github.com/rtthiel8)
+
+
+## License
+MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
